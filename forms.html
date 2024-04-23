@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+      </form>
+
+      <p>Choose your favorite Web language:</p>
+
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+<br>
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+      </form>
+
+<br>
+      <p>input field must have a name attribute to be submitted.</p>
+      <p>If the name attribute is omitted, the value of the input field will not be sent at all.</p>
+      <p>When present, it specifies that the form-data (input) should not be validated when submitted.</p>
+      <form action="https://www.google.com" novalidate>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Pramod"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Thete"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+
+      <br>
+      <p>target can have 4 values like _blank, _self,_parent, _top, framename</p>
+      <form action="" target="_blank" method="get">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+
+      <br>
+      <p>When autocomplete is on, the browser automatically complete values based on values that the user has entered before.</p>
+      <form action="" autocomplete="on">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <input type="submit">
+      </form>
+<br>
+      <p>Use the multiple attribute to allow the user to select more than one value</p>
+      <p>use size attribute to show all options at once</p>
+      <label for="cars">Choose a favorite car:</label><br>
+      <select id="cars" name="cars" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br>
+
+      <p>The rows attribute specifies the visible number of lines in a text area.
+        <br>
+        The cols attribute specifies the visible width of a text area.</p>
+      <textarea name="message" rows="10" cols="30">
+        The cat was playing in the garden.
+        </textarea>
+
+        <button type="button" onclick="alert('This is alert text!!')">Alert Me!</button>
+
+        <br>
+        <p>The fieldset element is used to group related data in a form.
+<br>
+            The legend element defines a caption for the fieldset element.</p>
+        <form action="">
+            <fieldset>
+              <legend>Register User:</legend>
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname" value="John"><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname" value="Doe"><br><br>
+              <input type="submit" value="Submit">
+            </fieldset>
+          </form>
+<br>
+
+          <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+          <form action="">
+            <input list="browsers">
+            <datalist id="browsers">
+              <option value="Edge">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+          </form>
+
+          <br>
+
+          <p>The output element represents the result of a calculation.</p> 
+
+    <form action=""
+    oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+    <br>
+
+    <p>The optgroup tag is used to group related options in a drop-down list:</p>
+
+    <form action="">
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+        <optgroup label="Swedish Cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+        </optgroup>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+    </form>
+
+    
+
+</body>
+</html>

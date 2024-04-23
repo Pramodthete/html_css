@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Property Example</title>
+  <style>
+    /* Common styles for all elements */
+    .box {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      text-align: center;
+      line-height: 100px;
+      margin: 10px;
+    }
+
+    /* Static position */
+    .static {
+      position: static;
+    }
+
+    /* Relative position */
+    .relative {
+      position: relative;
+      top: 20px;
+      left: 30px;
+      background-color: lightblue;
+    }
+
+    /* Absolute position */
+    .absolute {
+      position: absolute;
+      top: 50px;
+      left: 100px;
+      background-color: lightgreen;
+    }
+
+    /* Fixed position */
+    .fixed {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: lightcoral;
+    }
+
+    /* Sticky position */
+    .sticky {
+      position: sticky;
+      top: 0;
+      background-color: lightsalmon;
+    }
+
+    /* Container for sticky positioning example */
+    .container {
+      height: 2000px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box static">Static</div>
+<div class="box relative">Relative</div>
+<div class="box absolute">Absolute</div>
+<div class="box fixed">Fixed</div>
+
+<div class="container">
+  <div class="box sticky">Sticky</div>
+</div>
+
+</body>
+</html>

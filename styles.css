@@ -1,0 +1,44 @@
+*{
+    background-color: antiquewhite;
+}
+
+.myClass{
+    color: rebeccapurple;
+}
+
+#myId{
+    border: 2px dashed blue;
+}
+
+a[title]{
+    background-color: yellow;
+}
+
+ul li{
+    color: brown;
+}
+
+/* ul > li {   // direct children of ul (this is correct)
+    color: rgb(57, 252, 57);
+} */
+
+
+/*Both are siblings but h2 first tag then p => changed p*/
+h2 + p{
+    background-color: yellowgreen;
+}
+
+p:hover{
+    text-align: center;
+}
+
+p::first-letter{
+    font-size: 30px;
+}
+
+span:hover{
+    background-color: white;
+}
+
+
+  
